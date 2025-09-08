@@ -1,0 +1,230 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="High-resolution 3D walkthrough videos for real estate marketing. Purchase or subscribe for unlimited access."/>
+  <title>Your Brand – 3D Real Estate Scans</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <video autoplay muted loop class="bg-video">
+      <source src="your-demo-video.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="overlay">
+      <h1>Bring Properties to Life with 3D Scan Walkthroughs</h1>
+      <p>Immersive, high-res real estate scans. Sell faster, stand out, close more deals.</p>
+      <div class="cta-buttons">
+        <a href="#gallery" class="btn primary">View Scans</a>
+        <a href="#subscribe" class="btn secondary">Subscribe</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h3>🎥 Video Walkthroughs</h3>
+      <p>Stunning 3D property tours optimized for real estate buyers.</p>
+    </div>
+    <div class="feature">
+      <h3>💼 One-Time or Subscription</h3>
+      <p>Flexible pricing for every listing or agency model.</p>
+    </div>
+    <div class="feature">
+      <h3>🔐 Client Dashboard</h3>
+      <p>Manage purchases, downloads & billing in one place.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Explore 3D Scan Videos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="thumb1.jpg" alt="Property 1">
+        <h4>Modern Villa – LA</h4>
+        <p>$99.00</p>
+        <button>Preview</button>
+      </div>
+      <div class="card">
+        <img src="thumb2.jpg" alt="Property 2">
+        <h4>Luxury Condo – NYC</h4>
+        <p>$89.00</p>
+        <button>Preview</button>
+      </div>
+      <div class="card">
+        <img src="thumb3.jpg" alt="Property 3">
+        <h4>Suburban House – TX</h4>
+        <p>$79.00</p>
+        <button>Preview</button>
+      </div>
+    </div>
+    <a href="#" class="btn primary">Browse All Scans</a>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="subscribe">
+    <h2>Ready to Elevate Your Property Listings?</h2>
+    <a href="#" class="btn primary">Get Started</a>
+    <a href="#" class="btn secondary">Book a Demo</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Brand. All rights reserved.</p>
+    <nav>
+      <a href="#">About</a> |
+      <a href="#">Contact</a> |
+      <a href="#">Terms</a> |
+      <a href="#">Privacy</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
+css
+複製程式碼
+/* styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #111;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-buttons .btn {
+  margin: 0 0.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn.primary {
+  background-color: #00c3ff;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #fff;
+  color: #00c3ff;
+  border: 2px solid #00c3ff;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.features .feature {
+  flex: 1;
+  margin: 1rem;
+}
+
+.gallery {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cta {
+  background: #00c3ff;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #111;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer nav a {
+  color: #ccc;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+}
